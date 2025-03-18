@@ -3,4 +3,4 @@ Disallow: /private/
 Allow: /
 
 # Specify the location of your sitemap if you have one
-Sitemap: https://ibrahim-portfolio-jet.vercel.app
+Sitemap: https://ibrahim-portfolio-jet.vercel.app/
