@@ -2,7 +2,8 @@ import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import sitemap from 'vite-plugin-sitemap';
 import { robots } from 'vite-plugin-robots';
-import VitePluginCopy from 'vite-plugin-copy'; // Import the plugin for copying files
+import { VitePluginCopy } from 'vite-plugin-copy';
+ // Import the plugin for copying files
 
 // https://vitejs.dev/config/
 export default defineConfig({
