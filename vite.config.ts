@@ -14,7 +14,7 @@ export default defineConfig({
   plugins: [
     vue(),
     sitemap({
-      hostname: 'https://hetari.github.io/',
+      hostname: 'https://ibrahim-portfolio-jet.vercel.app',
       basePath: 'portfolio',
     }),
     robots(),
