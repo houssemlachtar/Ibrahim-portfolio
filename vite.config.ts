@@ -5,7 +5,7 @@ import { robots } from 'vite-plugin-robots';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/portfolio/',
+  base: '/Ibrahim-portfolio/',
   build: {
     sourcemap: true,
     // terserOptions:
