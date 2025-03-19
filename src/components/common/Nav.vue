@@ -98,7 +98,7 @@
 
       <div class="flex justify-start">
         <p
-          class="heading-6 font-fancy select-none font-bold uppercase text-flax-smoke-400 sm:heading-5"
+          class="text-xs font-fancy select-none font-bold uppercase text-flax-smoke-400 sm:text-sm md:text-base"
         >
           Let's collaborate!
         </p>
