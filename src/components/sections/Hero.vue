@@ -60,39 +60,39 @@
             </div>
           </div>
 
-<div class="grid w-full grid-cols-1 sm:grid-cols-4 gap-4">
-  <!-- Profile Image Container -->
-  <div
-    id="profile-container"
-    class="relative col-span-1 sm:col-span-2 flex justify-center mt-10 sm:mt-0"
-  >
-    <div class="overlay absolute inset-0 z-[2] bg-flax-smoke-50"></div>
-    <img
-      id="profile-img"
-      :src="profile"
-      alt="Ebraheem profile"
-      class="w-32 h-32 sm:w-full sm:h-[50vh] rounded-lg object-cover brightness-110 grayscale"
-    />
-  </div>
+          <div
+            id="profile-container"
+            class="relative col-span-4 mt-10 h-[20vh] max-w-lg w-fit select-none flex-col rounded-lg sm:mt-0 sm:h-full md:flex md:h-[50vh]"
+          >
+            <div class="overlay absolute inset-0 z-[2] bg-flax-smoke-50"></div>
+            <img
+              id="profile-img"
+              :src="profile"
+              alt="Ebraheem profile"
+              class="h-full scale-100 rounded-lg object-cover object-top brightness-110 grayscale"
+            />
+          </div>
 
-  <!-- Work Availability Section -->
-  <div
-    class="col-span-1 sm:col-span-2 flex flex-col items-center sm:items-end justify-center w-full text-center sm:text-end"
-  >
-    <div id="available-for-work">
-      <p
-        class="block font-medium uppercase leading-snug tracking-tight text-xs sm:text-sm"
-      >
-        Available for freelance & work
-      </p>
-      <h1
-        class="heading-1-alt font-fancy block font-bold leading-none tracking-tight text-xl sm:text-3xl"
-      >
-        {{ AvailableForWorkDate || "MAR '25" }}
-      </h1>
-    </div>
-  </div>
-
+          <!-- content-end justify-self-end  -->
+          <div
+            class="relative col-span-8 size-full overflow-clip text-end sm:col-span-4"
+          >
+            <div
+              id="available-for-work"
+              class="absolute bottom-0 right-0 flex translate-y-full flex-col items-end"
+            >
+              <p
+                class="block font-medium uppercase leading-snug -tracking-tight 3xl:text-base"
+              >
+                Available for freelance & work
+              </p>
+              <h1
+                class="3xl:heading-1 heading-1-alt font-fancy block font-bold leading-none -tracking-tight"
+              >
+                {{ AvailableForWorkDate }}
+              </h1>
+            </div>
+          </div>
         </div>
       </div>
     </div>
