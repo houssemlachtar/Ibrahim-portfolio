@@ -6,18 +6,16 @@
     <div
       class="flex-center relative h-[92vh] w-full flex-col rounded-lg bg-black uppercase"
     >
-<video
-  class="absolute bottom-0 left-0 size-full rounded-lg object-cover object-bottom"
-  :src="contact"
-                  preload="auto"
-                  loop="true"
-                  autoplay="true"
-                  playsinline="true"
-                  webkit-playsinline="true"
-                  onended="this.play()"
-                  muted="true"
-                  type="video/webm"
-></video>
+    <video
+      class="absolute bottom-0 left-0 size-full rounded-lg object-cover object-bottom"
+      :src="contact"
+      autoplay
+      muted
+      loop
+      playsinline
+      webkit-playsinline
+      onended="this.play()"
+    ></video>
 
       <!-- :style="'background-image: url(' + contact + ') !important; '" -->
       <div class="flex-center z-10 flex-col gap-y-10">
