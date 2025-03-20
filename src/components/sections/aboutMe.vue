@@ -53,7 +53,7 @@
           class="mt-[5%] flex justify-start gap-10 text-flax-smoke-300 sm:gap-20"
         >
           <p class="heading-6 text-nowrap text-center text-flax-smoke-300/85">
-            ( ABOUT ME )
+            ABOUT ME
           </p>
           <p class="heading-6 font-fancy w-full text-balance sm:max-w-[40ch]">
             Creating great web experiences is my primary focus. I ensure each
@@ -61,7 +61,7 @@
             attention to detail and user-centric design principles. <br /><br />
             When I'm not immersed in web development and design, you can find me
             sharing insights about my freelance journey on <i>&Xopf;</i>,
-            loudly, playing music (Funk), or just relaxing.
+            loudly, playing music (Funk), or just relaxing. <br />
           </p>
         </div>
       </div>
@@ -88,7 +88,7 @@
 
   onBeforeMount(() => {
     aboutMe.value = textSplitterIntoChar(
-      'Programmer, Developer, Web-animator/',
+      'Business Analyst, Developer, Filmaker, Musician',
       true,
       true,
     );
