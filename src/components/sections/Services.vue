@@ -14,7 +14,7 @@
         <p
           class="col-start-0 heading-6 col-span-4 text-nowrap text-center text-flax-smoke-300/85 md:col-start-4"
         >
-          ( SERVICES )
+          SERVICES
         </p>
         <p
           class="heading-4 font-fancy col-span-8 w-full text-balance sm:font-semibold md:col-span-5"
