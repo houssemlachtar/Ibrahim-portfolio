@@ -23,11 +23,11 @@
         </svg>
       </div>
 
-      <h2
+      <h1
         id="little-bit-about-me"
         v-html="aboutMe"
         class="heading-1-alt lg:heading-1 section-heading col-span-full font-extrabold uppercase leading-none md:col-span-8 md:col-start-6"
-      ></h2>
+      ></h1>
     </div>
 
     <div class="padding-y md:column-gap mt-6 grid grid-cols-12">
