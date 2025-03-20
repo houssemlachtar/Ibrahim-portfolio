@@ -16,7 +16,6 @@
                   webkit-playsinline="true"
                   onended="this.play()"
                   muted="true"
-                  @error="handleVideoError"
                   type="video/webm"
 ></video>
 
