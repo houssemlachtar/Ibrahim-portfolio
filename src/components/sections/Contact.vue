@@ -16,7 +16,6 @@
   webkit-playsinline
   onended="this.play()"
   preload="auto"
-  playsinline
 ></video>
 
       <!-- :style="'background-image: url(' + contact + ') !important; '" -->
