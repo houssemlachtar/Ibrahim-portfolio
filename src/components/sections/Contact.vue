@@ -9,6 +9,7 @@
     <video
       class="absolute bottom-0 left-0 size-full rounded-lg object-cover object-bottom"
       :src="contact"
+      preload="auto"
       autoplay
       muted
       loop
