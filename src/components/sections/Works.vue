@@ -73,12 +73,13 @@
 
                 <video
                   :src="work.videoSrc"
-                  loop
-                  autoplay
-                  playsinline
-                  webkit-playsinline
+                  preload="auto"
+                  loop="true"
+                  autoplay="true"
+                  playsinline="true"
+                  webkit-playsinline="true"
                   onended="this.play()"
-                  muted
+                  muted="true"
                   @error="handleVideoError"
                   type="video/webm"
                   class="work-video size-[80%] rounded-md object-contain"
