@@ -17,7 +17,7 @@
         class="col-span-full mt-[5%] flex justify-end gap-10 text-flax-smoke-800 sm:gap-20 lg:col-span-10"
       >
         <p class="heading-6 text-nowrap text-center uppercase">
-          ( Testimonials )
+          Testimonials
         </p>
         <p class="heading-6 font-fancy w-full text-balance sm:max-w-[40ch]">
           Here's what my clients say about our collaboration. Their satisfaction
