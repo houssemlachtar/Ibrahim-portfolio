@@ -60,47 +60,39 @@
             </div>
           </div>
 
-        <div
-  id="profile-container"
-  class="relative col-span-4 mt-10 h-[20vh] max-w-lg w-fit select-none flex-col rounded-lg sm:mt-0 sm:h-full md:flex md:h-[50vh]"
->
-  <div class="overlay absolute inset-0 z-[2] bg-flax-smoke-50"></div>
-  <img
-    id="profile-img"
-    :src="profile"
-    alt="Ebraheem profile"
-    class="h-full scale-100 rounded-lg object-cover object-top brightness-110 grayscale"
-  />
-</div>
-
-<!-- Ensure visibility on all screen sizes -->
-<div
-  class="relative col-span-8 size-full text-end sm:col-span-4"
->
+<div class="grid w-full grid-cols-1 sm:grid-cols-4 gap-4">
+  <!-- Profile Image Container -->
   <div
-    id="available-for-work"
-    class="bottom-0 right-0 flex flex-col items-end sm:absolute sm:translate-y-full"
+    id="profile-container"
+    class="relative col-span-1 sm:col-span-4 flex justify-center mt-10 sm:mt-0"
   >
-    <p
-      class="block font-medium uppercase leading-snug tracking-tight text-sm sm:text-base 3xl:text-base"
-    >
-      Available for freelance & work
-    </p>
-    <h1
-      v-if="AvailableForWorkDate"
-      class="3xl:heading-1 heading-1-alt font-fancy block font-bold leading-none tracking-tight text-lg sm:text-2xl"
-    >
-      {{ AvailableForWorkDate }}
-    </h1>
-    <h1
-      v-else
-      class="text-red-500 text-sm"
-    >
-      (Date not available)
-    </h1>
+    <div class="overlay absolute inset-0 z-[2] bg-flax-smoke-50"></div>
+    <img
+      id="profile-img"
+      :src="profile"
+      alt="Ebraheem profile"
+      class="w-40 h-40 sm:w-full sm:h-full rounded-lg object-cover brightness-110 grayscale"
+    />
+  </div>
+
+  <!-- Work Availability Section -->
+  <div
+    class="col-span-1 sm:col-span-4 flex flex-col items-center sm:items-end justify-center w-full text-center sm:text-end min-h-[100px] bg-red-100"
+  >
+    <div id="available-for-work">
+      <p
+        class="block font-medium uppercase leading-snug tracking-tight text-sm sm:text-base"
+      >
+        Available for freelance & work
+      </p>
+      <h1
+        class="heading-1-alt font-fancy block font-bold leading-none tracking-tight text-lg sm:text-2xl"
+      >
+        {{ AvailableForWorkDate || "No Date Set" }}
+      </h1>
+    </div>
   </div>
 </div>
-
         </div>
       </div>
     </div>
