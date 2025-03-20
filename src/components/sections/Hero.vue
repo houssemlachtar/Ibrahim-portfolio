@@ -60,7 +60,7 @@
             </div>
           </div>
 
-<div
+        <div
   id="profile-container"
   class="relative col-span-4 mt-10 h-[20vh] max-w-lg w-fit select-none flex-col rounded-lg sm:mt-0 sm:h-full md:flex md:h-[50vh]"
 >
@@ -73,23 +73,30 @@
   />
 </div>
 
-<!-- content-end justify-self-end  -->
+<!-- Ensure visibility on all screen sizes -->
 <div
-  class="relative col-span-8 size-full overflow-visible text-end sm:col-span-4"
+  class="relative col-span-8 size-full text-end sm:col-span-4"
 >
   <div
     id="available-for-work"
-    class="absolute bottom-0 right-0 flex flex-col items-end sm:translate-y-full"
+    class="bottom-0 right-0 flex flex-col items-end sm:absolute sm:translate-y-full"
   >
     <p
-      class="block font-medium uppercase leading-snug -tracking-tight text-sm sm:text-base 3xl:text-base"
+      class="block font-medium uppercase leading-snug tracking-tight text-sm sm:text-base 3xl:text-base"
     >
       Available for freelance & work
     </p>
     <h1
-      class="3xl:heading-1 heading-1-alt font-fancy block font-bold leading-none -tracking-tight text-lg sm:text-2xl"
+      v-if="AvailableForWorkDate"
+      class="3xl:heading-1 heading-1-alt font-fancy block font-bold leading-none tracking-tight text-lg sm:text-2xl"
     >
       {{ AvailableForWorkDate }}
+    </h1>
+    <h1
+      v-else
+      class="text-red-500 text-sm"
+    >
+      (Date not available)
     </h1>
   </div>
 </div>
