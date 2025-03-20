@@ -9,13 +9,15 @@
 <video
   class="absolute bottom-0 left-0 size-full rounded-lg object-cover object-bottom"
   :src="contact"
-  autoplay
-  muted
-  loop
-  playsinline
-  webkit-playsinline
-  onended="this.play()"
-  preload="auto"
+                  preload="auto"
+                  loop="true"
+                  autoplay="true"
+                  playsinline="true"
+                  webkit-playsinline="true"
+                  onended="this.play()"
+                  muted="true"
+                  @error="handleVideoError"
+                  type="video/webm"
 ></video>
 
       <!-- :style="'background-image: url(' + contact + ') !important; '" -->
