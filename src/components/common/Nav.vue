@@ -100,7 +100,7 @@
         <p
           class="heading-5 font-fancy select-none font-bold uppercase text-flax-smoke-400"
         >
-            Let's collaborate!
+          {{ collaborationText }}
         </p>
       </div>
       <div class="flex safari-hidden">
@@ -121,51 +121,58 @@
 </template>
 
 <script setup lang="ts">
-  import { onMounted, ref, watch } from 'vue';
-  import { Link, BurgerMenuBtn, MagneticEffect } from '..';
-  import { Circles } from '../design';
-  import { Button } from '../common';
-  import {
-    animateNavbarEnter,
-    animateNavbarLeave,
-    navbarScale,
-  } from '@/animations';
-  import { navbarLinks, navLinks, socialLinks } from '@/data';
-  import { lenis } from '@/main';
+import { onMounted, ref, watch } from 'vue';
+import { Link, BurgerMenuBtn, MagneticEffect } from '..';
+import { Circles } from '../design';
+import { Button } from '../common';
+import {
+  animateNavbarEnter,
+  animateNavbarLeave,
+  navbarScale,
+} from '@/animations';
+import { navbarLinks, navLinks, socialLinks } from '@/data';
+import { lenis } from '@/main';
 
-  const isNavbarOpen = ref(false);
+const isNavbarOpen = ref(false);
+const collaborationText = ref('Let\'s collaborate!');
 
-  const toggleBtnClickAnimation = () => {
-    isNavbarOpen.value = !isNavbarOpen.value;
-    document.getElementById('magneto')?.classList.toggle('active');
-    const x = document.getElementById('navbar') as HTMLDivElement;
-    if (isNavbarOpen.value) {
-      animateNavbarEnter('#navbar', '#navLinks li a', '.contact');
-      x.focus();
-    } else {
-      animateNavbarLeave('#navbar', '#navLinks li a', '.contact');
-      x.blur();
-    }
-  };
+const toggleBtnClickAnimation = () => {
+  isNavbarOpen.value = !isNavbarOpen.value;
+  document.getElementById('magneto')?.classList.toggle('active');
+  const x = document.getElementById('navbar') as HTMLDivElement;
+  if (isNavbarOpen.value) {
+    animateNavbarEnter('#navbar', '#navLinks li a', '.contact');
+    x.focus();
+  } else {
+    animateNavbarLeave('#navbar', '#navLinks li a', '.contact');
+    x.blur();
+  }
+};
 
-  const gotoSection = (url: string) => {
-    lenis.start();
-    lenis.scrollTo(url, { duration: 3 });
-    toggleBtnClickAnimation();
-  };
+const gotoSection = (url: string) => {
+  lenis.start();
+  lenis.scrollTo(url, { duration: 3 });
+  toggleBtnClickAnimation();
+};
 
-  onMounted(() => {
-    navbarScale('#burger', '#hero');
-    if (
-      /^((?!chrome|android).)*safari/i.test(navigator.userAgent) &&
-      window.innerWidth < 1024
-    ) {
-      document.querySelector('.safari-hidden')?.classList.add('hidden');
-    }
-  });
+onMounted(() => {
+  navbarScale('#burger', '#hero');
+  
+  // Change collaboration text for non-Safari devices on small screens
+  if (!/^((?!chrome|android).)*safari/i.test(navigator.userAgent) && window.innerWidth < 1024) {
+    collaborationText.value = 'Let\'s collab!';
+  }
 
-  const emit = defineEmits(['isLocked']);
-  watch(isNavbarOpen, (newVal) => {
-    emit('isLocked', newVal);
-  });
+  if (
+    /^((?!chrome|android).)*safari/i.test(navigator.userAgent) &&
+    window.innerWidth < 1024
+  ) {
+    document.querySelector('.safari-hidden')?.classList.add('hidden');
+  }
+});
+
+const emit = defineEmits(['isLocked']);
+watch(isNavbarOpen, (newVal) => {
+  emit('isLocked', newVal);
+});
 </script>
