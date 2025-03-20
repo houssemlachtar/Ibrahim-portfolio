@@ -64,35 +64,35 @@
   <!-- Profile Image Container -->
   <div
     id="profile-container"
-    class="relative col-span-1 sm:col-span-4 flex justify-center mt-10 sm:mt-0"
+    class="relative col-span-1 sm:col-span-2 flex justify-center mt-10 sm:mt-0"
   >
     <div class="overlay absolute inset-0 z-[2] bg-flax-smoke-50"></div>
     <img
       id="profile-img"
       :src="profile"
       alt="Ebraheem profile"
-      class="w-40 h-40 sm:w-full sm:h-full rounded-lg object-cover brightness-110 grayscale"
+      class="w-32 h-32 sm:w-full sm:h-[50vh] rounded-lg object-cover brightness-110 grayscale"
     />
   </div>
 
   <!-- Work Availability Section -->
   <div
-    class="col-span-1 sm:col-span-4 flex flex-col items-center sm:items-end justify-center w-full text-center sm:text-end min-h-[100px] bg-red-100"
+    class="col-span-1 sm:col-span-2 flex flex-col items-center sm:items-end justify-center w-full text-center sm:text-end"
   >
     <div id="available-for-work">
       <p
-        class="block font-medium uppercase leading-snug tracking-tight text-sm sm:text-base"
+        class="block font-medium uppercase leading-snug tracking-tight text-xs sm:text-sm"
       >
         Available for freelance & work
       </p>
       <h1
-        class="heading-1-alt font-fancy block font-bold leading-none tracking-tight text-lg sm:text-2xl"
+        class="heading-1-alt font-fancy block font-bold leading-none tracking-tight text-xl sm:text-3xl"
       >
-        {{ AvailableForWorkDate || "No Date Set" }}
+        {{ AvailableForWorkDate || "MAR '25" }}
       </h1>
     </div>
   </div>
-</div>
+
         </div>
       </div>
     </div>
