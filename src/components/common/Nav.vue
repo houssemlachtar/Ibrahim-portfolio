@@ -98,9 +98,9 @@
 
       <div class="flex justify-start">
         <p
-          class="text-xs font-fancy select-none font-bold uppercase text-flax-smoke-400 sm:text-sm md:text-base"
+          class="heading-5 font-fancy select-none font-bold uppercase text-flax-smoke-400"
         >
-          Let's collaborate!
+            Let's collaborate!
         </p>
       </div>
       <div class="flex safari-hidden">
