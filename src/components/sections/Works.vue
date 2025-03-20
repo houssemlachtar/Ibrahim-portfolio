@@ -20,9 +20,7 @@
         <p
           class="heading-6 col-span-4 text-nowrap text-center text-flax-smoke-300/85 lg:col-start-2"
         >
-          (
-          <span class="inline sm:hidden">{{ selectedWorksProps.length }} </span>
-          PROJECTS )
+          PROJECTS 
         </p>
         <p
           class="heading-4 font-fancy col-span-8 w-full text-balance sm:font-semibold lg:col-span-7"
