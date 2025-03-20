@@ -61,7 +61,7 @@
             attention to detail and user-centric design principles. <br /><br />
             When I'm not immersed in web development and design, you can find me
             sharing insights about my freelance journey on <i>&Xopf;</i>,
-            loudly, playing music (Funk), or just relaxing. <br />
+            loudly, playing music (Funk), or just relaxing.
           </p>
         </div>
       </div>
