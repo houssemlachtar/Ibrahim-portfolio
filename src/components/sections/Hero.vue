@@ -84,7 +84,7 @@
               <p
                 class="block font-medium uppercase leading-snug -tracking-tight 3xl:text-base"
               >
-                Open for freelance & work
+                Open for work
               </p>
               <h1
                 class="3xl:heading-1 heading-1-alt font-fancy block font-bold leading-none -tracking-tight"
