@@ -246,7 +246,7 @@
   };
 
   onBeforeMount(() => {
-    selectedWorks.value = textSplitterIntoChar('Selected Works / ', true);
+    selectedWorks.value = textSplitterIntoChar('Selected Work / ', true);
   });
 
   onMounted(() => {
