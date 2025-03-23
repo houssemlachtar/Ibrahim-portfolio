@@ -94,7 +94,7 @@
   }
 
   .spacing-t {
-    @apply pt-5 sm:pt-12;
+    @apply pt-5 sm:pt-12 lg:pt-14;
   }
   
   @media (min-width: 1024px) { /* Large screens (lg) and up */
@@ -116,7 +116,7 @@
   }
 
   .column-gap {
-    column-gap: 1rem;
+    column-gap: 2.5rem;
   }
 
   .row-gap {
