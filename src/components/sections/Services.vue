@@ -102,7 +102,7 @@
     if (window.innerWidth < 1024) {
       if (index === 0) return 'top-[calc(20vh_+_0em)] mb-[17em]';
       if (index === 1) return 'top-[calc(20vh_+_5.75em)] mb-[12em]';
-      if (index === 2) return 'top-[calc(20vh_+_11.5em)] mb-[6.25em]';
+      if (index === 2) return 'top-[calc(20vh_+_11.5em)] mb-[5em]';
     } else {
       if (index === 0) return 'top-[calc(9vh_-_1.25em)] mb-[18em]';
       if (index === 1) return 'top-[calc(9vh_+_5.75em)] mb-[11.5em]';
