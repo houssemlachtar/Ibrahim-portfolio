@@ -1,7 +1,7 @@
 <template>
   <section
     id="about-me-section"
-    class="common-padding relative z-10 overflow-y-clip rounded-b-3xl bg-[#0B0B0A] text-flax-smoke-200 shadow-2xl will-change-auto sm:mt-0"
+    class="common-padding relative z-10 overflow-y-clip rounded-b-3xl bg-[#0B0B0A] text-flax-smoke-200 shadow-2xl will-change-auto sm:mt-0 pt-[30%]"
   >
     <div class="md:column-gap grid grid-cols-12">
       <div class="hide-on-mobile overflow-hidden md:col-span-4">
@@ -26,7 +26,7 @@
       <h1
         id="little-bit-about-me"
         v-html="aboutMe"
-        class="heading-1-alt lg:heading-1 section-heading col-span-full font-extrabold uppercase leading-none md:col-span-8 md:col-start-6"
+        class="heading-1-alt sm:heading-3 lg:heading-2 section-heading col-span-full font-extrabold uppercase leading-none md:col-span-8 md:col-start-6"
       ></h1>
     </div>
 
