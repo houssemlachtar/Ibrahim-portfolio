@@ -90,7 +90,7 @@
   }
 
   .padding-y {
-    @apply py-[4%];
+    @apply py-[9%];
   }
 
   .spacing-t {
