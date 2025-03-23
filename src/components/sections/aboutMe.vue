@@ -88,7 +88,7 @@
 
   onBeforeMount(() => {
     aboutMe.value = textSplitterIntoChar(
-      'Business Analyst, Developer, Filmaker, Musician',
+      'BunsinessAnalyst FrontendDeveloper Marketer Musician Filmaker',
       true,
       true,
     );
