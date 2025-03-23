@@ -12,7 +12,7 @@
           </div>
         </div>
 
-        <div class="lg:column-gap spacing-t grid w-full grid-cols-12 justify-items-center">
+        <div class="lg:column-gap spacing-t grid w-full grid-cols-12 justify-items-start lg:justify-items-center"">
           <div
             class="col-span-full flex flex-col items-start gap-14 sm:col-span-4"
           >
@@ -69,7 +69,7 @@
               id="profile-img"
               :src="profile"
               alt="Ebraheem profile"
-              class="h-full scale-100 rounded-lg object-cover object-top brightness-110 grayscale"
+              class="h-full scale-100 rounded-lg object-cover object-top brightness-110 grayscale sm:h-auto sm:scale-90"
             />
           </div>
 
