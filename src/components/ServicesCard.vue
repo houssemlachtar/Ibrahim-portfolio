@@ -19,11 +19,13 @@
       <div
         class="heading-4 text-heading-4 col-span-7 col-start-5 flex w-full flex-col gap-y-5"
       >
-        <p
-          class="text-balance text-base font-medium text-flax-smoke-300/80 sm:max-w-[40ch]"
-        >
-          {{ body }}
-        </p>
+          <p
+            class="text-balance text-base font-medium text-flax-smoke-300/80 sm:max-w-[40ch] custom-line-height"
+          >
+            {{ body }}
+          </p>
+
+
 
         <div>
           <template v-for="(heading, index) in headings" :key="index">
@@ -106,3 +108,8 @@
     },
   });
 </script>
+<style scoped>
+.custom-line-height {
+  line-height: 0.95; /* Adjust as needed */
+}
+</style>
