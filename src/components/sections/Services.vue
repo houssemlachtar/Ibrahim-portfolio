@@ -100,7 +100,7 @@
 
   const getStyle = computed(() => (index: number) => {
     if (window.innerWidth < 1024) {
-      if (index === 0) return 'top-[calc(20vh_+_1.5em)] mb-[17em]';
+      if (index === 0) return 'top-[calc(20vh_-_1.5em)] mb-[17em]';
       if (index === 1) return 'top-[calc(20vh_+_5.5em)] mb-[12em]';
       if (index === 2) return 'top-[calc(20vh_+_11em)] mb-[6.5em]';
     } else {
