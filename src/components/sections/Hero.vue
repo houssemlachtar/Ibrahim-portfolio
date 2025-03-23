@@ -12,7 +12,7 @@
           </div>
         </div>
 
-        <div class="lg:column-gap spacing-t grid w-full grid-cols-12 justify-items-start lg:justify-items-center"">
+        <div class="lg:column-gap spacing-t grid w-full grid-cols-12 justify-items-start lg:justify-items-center">
           <div
             class="col-span-full flex flex-col items-start gap-14 sm:col-span-4"
           >
