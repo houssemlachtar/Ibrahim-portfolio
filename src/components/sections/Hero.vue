@@ -69,7 +69,7 @@
               id="profile-img"
               :src="profile"
               alt="Ebraheem profile"
-              class="h-full scale-100 rounded-lg object-cover object-top brightness-110 grayscale sm:h-auto sm:scale-90"
+              class="h-full scale-100 rounded-lg object-cover object-top brightness-110 grayscale"
             />
           </div>
 
