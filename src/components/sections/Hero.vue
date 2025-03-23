@@ -62,9 +62,9 @@
 
           <div
             id="profile-container"
-            class="relative col-span-4 mt-10 h-[30vh] max-w-lg w-fit select-none flex-col rounded-lg sm:mt-0 sm:h-[50vh] md:flex md:h-[50vh]"
+            class="relative col-span-4 mt-10 h-[20vh] max-w-lg w-fit select-none flex-col rounded-lg sm:mt-0 sm:h-full md:flex md:h-[50vh]"
           >
-            <div class="overlay absolute inset-0 z-[1] bg-flax-smoke-50"></div>
+            <div class="overlay absolute inset-0 z-[2] bg-flax-smoke-50"></div>
             <img
               id="profile-img"
               :src="profile"
@@ -73,13 +73,13 @@
             />
           </div>
 
-          <!-- content-end justify-self-end -->
+          <!-- content-end justify-self-end  -->
           <div
             class="relative col-span-8 size-full overflow-clip text-end sm:col-span-4"
           >
             <div
               id="available-for-work"
-              class="absolute bottom-0 right-0 flex translate-y-0 sm:translate-y-0 flex-col items-end"
+              class="absolute bottom-0 right-0 flex translate-y-full flex-col items-end"
             >
               <p
                 class="block font-medium uppercase leading-snug -tracking-tight 3xl:text-base"
