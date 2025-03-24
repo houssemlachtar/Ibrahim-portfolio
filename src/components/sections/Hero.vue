@@ -62,19 +62,19 @@
 
 <div
   id="profile-container"
-  class="relative col-span-4 mt-10 max-w-lg w-full select-none flex flex-col rounded-lg sm:mt-0 sm:h-full min-h-[200px]"
+  class="relative col-span-4 mt-10 h-[20vh] min-h-[200px] max-w-lg w-fit select-none flex flex-col rounded-lg sm:mt-0 sm:h-full md:h-[50vh]"
 >
   <div class="overlay absolute inset-0 z-[1] bg-flax-smoke-50"></div>
   <img
     id="profile-img"
     :src="profile"
     alt="Ebraheem profile"
-    class="w-full h-auto scale-100 rounded-lg object-cover object-top brightness-110 grayscale"
+    class="h-full w-full scale-100 rounded-lg object-cover object-top brightness-110 grayscale"
   />
 </div>
 
 <!-- content-end justify-self-end -->
-<div class="relative col-span-8 w-full text-end sm:col-span-4">
+<div class="relative col-span-8 size-full overflow-hidden text-end sm:col-span-4">
   <div
     id="available-for-work"
     class="absolute bottom-0 right-0 flex translate-y-0 flex-col items-end"
