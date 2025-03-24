@@ -13,9 +13,7 @@
         </div>
 
         <div class="lg:column-gap spacing-t grid w-full grid-cols-12 justify-items-center">
-          <div
-            class="col-span-full flex flex-col items-start gap-14 sm:col-span-4"
-          >
+          <div class="col-span-full flex flex-col items-start gap-14 sm:col-span-4">
             <div class="overflow-hidden">
               <svg
                 id="down-arrow"
@@ -122,23 +120,23 @@
 import { ref, onMounted } from 'vue';
 import { MyName, Star } from '../design';
 import { Button } from '@/components/common';
-import { profile } from '@/assets/images';
 import { getAvailableForWorkDate, textSplitterIntoChar } from '@/functions';
 import { dataCalConfig, dataCalLink, dataCalNamespace } from '@/data';
 
+// Declare reactive variables
 const whoAmI = ref(
   'A freelance full-stack developer, cutting-edge technologies to deliver comprehensive solutions for your business.',
 );
 const AvailableForWorkDate = ref('');
 
-// Detect if it's an iPhone
-const isIphone = ref(false);
-
-// Set the profile and availability date
-const profile = profile;  // Dynamically binding :src="profile"
+// Profile image and availability date
+const profile = '/profile.webp';  // Image path relative to 'public' folder
 const AvailableForWorkDateValue = getAvailableForWorkDate();
 
-// Initialize the text and availability date when mounted
+// Detect iPhone
+const isIphone = ref(false);
+
+// Initialize values when mounted
 onMounted(() => {
   whoAmI.value = textSplitterIntoChar(whoAmI.value);
   AvailableForWorkDate.value = AvailableForWorkDateValue;
