@@ -109,6 +109,11 @@
               </h1>
             </div>
           </div>
+
+          <!-- Add a fallback for the non-iPhone layout (temporary) -->
+          <div v-else>
+            <p>This is the non-iPhone layout.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -141,12 +146,13 @@ onMounted(() => {
   whoAmI.value = textSplitterIntoChar(whoAmI.value);
   AvailableForWorkDate.value = AvailableForWorkDateValue;
   detectIphone();
+  console.log('Is iPhone:', isIphone.value);  // Debug the detection
 });
 
 // Function to detect iPhone
 function detectIphone() {
-  const userAgent = navigator.userAgent || navigator.vendor;
-  isIphone.value = /iPhone|iPad|iPod/i.test(userAgent);
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  isIphone.value = /iPhone|iPad|iPod/i.test(userAgent) && !window.MSStream;
 }
 </script>
 
