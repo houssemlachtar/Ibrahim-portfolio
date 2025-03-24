@@ -60,61 +60,57 @@
             </div>
           </div>
 
-  <div>
-    <!-- Regular Layout (Non-iPhone) -->
-    <div
-      v-if="!isIphone"
-      id="profile-container"
-      class="relative col-span-4 mt-10 h-[20vh] max-w-lg w-fit select-none flex-col rounded-lg sm:mt-0 sm:h-full md:flex md:h-[50vh]"
-    >
-      <div class="overlay absolute inset-0 z-[2] bg-flax-smoke-50"></div>
-      <img
-        id="profile-img"
-        :src="profile"
-        alt="Ebraheem profile"
-        class="h-full scale-100 rounded-lg object-cover object-top brightness-110 grayscale"
-      />
-    </div>
+          <!-- Regular Layout (Non-iPhone) -->
+          <div
+            v-if="!isIphone"
+            id="profile-container"
+            class="relative col-span-4 mt-10 h-[20vh] max-w-lg w-fit select-none flex-col rounded-lg sm:mt-0 sm:h-full md:flex md:h-[50vh]"
+          >
+            <div class="overlay absolute inset-0 z-[2] bg-flax-smoke-50"></div>
+            <img
+              id="profile-img"
+              :src="profile"
+              alt="Ebraheem profile"
+              class="h-full scale-100 rounded-lg object-cover object-top brightness-110 grayscale"
+            />
+          </div>
 
-    <div v-if="!isIphone" class="relative col-span-8 size-full overflow-clip text-end sm:col-span-4">
-      <div id="available-for-work" class="absolute bottom-0 right-0 flex translate-y-full flex-col items-end">
-        <p class="block font-medium uppercase leading-snug -tracking-tight 3xl:text-base">
-          Open for work
-        </p>
-        <h1 class="3xl:heading-1 heading-1-alt font-fancy block font-bold leading-none -tracking-tight">
-          {{ AvailableForWorkDate }}
-        </h1>
-      </div>
-    </div>
+          <div v-if="!isIphone" class="relative col-span-8 size-full overflow-clip text-end sm:col-span-4">
+            <div id="available-for-work" class="absolute bottom-0 right-0 flex translate-y-full flex-col items-end">
+              <p class="block font-medium uppercase leading-snug -tracking-tight 3xl:text-base">
+                Open for work
+              </p>
+              <h1 class="3xl:heading-1 heading-1-alt font-fancy block font-bold leading-none -tracking-tight">
+                {{ AvailableForWorkDate }}
+              </h1>
+            </div>
+          </div>
 
-    <!-- iPhone Layout -->
-    <div
-      v-if="isIphone"
-      id="profile-container"
-      class="relative col-span-4 mt-10 min-h-[250px] max-w-lg w-full select-none flex flex-col rounded-lg sm:mt-0 sm:h-full md:min-h-[300px]"
-    >
-      <div class="overlay absolute inset-0 z-[1] bg-flax-smoke-50"></div>
-      <img
-        id="profile-img"
-        :src="profile"
-        alt="Ebraheem profile"
-        class="w-full h-full min-h-[250px] max-h-[500px] rounded-lg object-cover object-top brightness-110 grayscale"
-      />
-    </div>
+          <!-- iPhone Layout -->
+          <div
+            v-if="isIphone"
+            id="profile-container"
+            class="relative col-span-4 mt-10 min-h-[250px] max-w-lg w-full select-none flex flex-col rounded-lg sm:mt-0 sm:h-full md:min-h-[300px]"
+          >
+            <div class="overlay absolute inset-0 z-[1] bg-flax-smoke-50"></div>
+            <img
+              id="profile-img"
+              :src="profile"
+              alt="Ebraheem profile"
+              class="w-full h-full min-h-[250px] max-h-[500px] rounded-lg object-cover object-top brightness-110 grayscale"
+            />
+          </div>
 
-    <div v-if="isIphone" class="relative col-span-8 w-full text-end sm:col-span-4">
-      <div id="available-for-work" class="absolute bottom-0 right-0 flex translate-y-0 flex-col items-end">
-        <p class="block font-medium uppercase leading-snug -tracking-tight 3xl:text-base">
-          Open for work
-        </p>
-        <h1 class="3xl:heading-1 heading-1-alt font-fancy block font-bold leading-none -tracking-tight">
-          {{ AvailableForWorkDate }}
-        </h1>
-      </div>
-    </div>
-  </div>
-
-
+          <div v-if="isIphone" class="relative col-span-8 w-full text-end sm:col-span-4">
+            <div id="available-for-work" class="absolute bottom-0 right-0 flex translate-y-0 flex-col items-end">
+              <p class="block font-medium uppercase leading-snug -tracking-tight 3xl:text-base">
+                Open for work
+              </p>
+              <h1 class="3xl:heading-1 heading-1-alt font-fancy block font-bold leading-none -tracking-tight">
+                {{ AvailableForWorkDate }}
+              </h1>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -123,43 +119,41 @@
 </template>
 
 <script setup lang="ts">
-  import { onBeforeMount, ref } from 'vue';
-  import { MyName, Star } from '../design';
-  import { Button } from '@/components/common';
-  import { profile } from '@/assets/images';
-  import { getAvailableForWorkDate, textSplitterIntoChar } from '@/functions';
-  import { dataCalConfig, dataCalLink, dataCalNamespace } from '@/data';
+import { ref, onMounted } from 'vue';
+import { MyName, Star } from '../design';
+import { Button } from '@/components/common';
+import { profile } from '@/assets/images';
+import { getAvailableForWorkDate, textSplitterIntoChar } from '@/functions';
+import { dataCalConfig, dataCalLink, dataCalNamespace } from '@/data';
 
-  const whoAmI = ref(
-    'A freelance full-stack developer, cutting-edge technologies to deliver comprehensive solutions for your business.',
-  );
-  const AvailableForWorkDate = ref('');
+const whoAmI = ref(
+  'A freelance full-stack developer, cutting-edge technologies to deliver comprehensive solutions for your business.',
+);
+const AvailableForWorkDate = ref('');
 
-  onBeforeMount(() => {
-    whoAmI.value = textSplitterIntoChar(whoAmI.value);
-    AvailableForWorkDate.value = getAvailableForWorkDate();
-  });
-export default {
-  data() {
-    return {
-      isIphone: false,
-      profile: "profile", // Dynamically binding :src="profile"
-      AvailableForWorkDate: "AvailableForWorkDate", // Dynamically binding {{ AvailableForWorkDate }}
-    };
-  },
-  mounted() {
-    this.detectIphone();
-  },
-  methods: {
-    detectIphone() {
-      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-      this.isIphone = /iPhone|iPad|iPod/i.test(userAgent);
-    },
-  },
-};
+// Detect if it's an iPhone
+const isIphone = ref(false);
+
+// Set the profile and availability date
+const profile = profile;  // Dynamically binding :src="profile"
+const AvailableForWorkDateValue = getAvailableForWorkDate();
+
+// Initialize the text and availability date when mounted
+onMounted(() => {
+  whoAmI.value = textSplitterIntoChar(whoAmI.value);
+  AvailableForWorkDate.value = AvailableForWorkDateValue;
+  detectIphone();
+});
+
+// Function to detect iPhone
+function detectIphone() {
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  isIphone.value = /iPhone|iPad|iPod/i.test(userAgent);
+}
 </script>
-<style>
-  #profile-container {
+
+<style scoped>
+#profile-container {
   display: flex !important;
   opacity: 1 !important;
   visibility: visible !important;
