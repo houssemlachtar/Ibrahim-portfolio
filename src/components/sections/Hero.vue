@@ -13,7 +13,9 @@
         </div>
 
         <div class="lg:column-gap spacing-t grid w-full grid-cols-12 justify-items-center">
-          <div class="col-span-full flex flex-col items-start gap-14 sm:col-span-4">
+          <div
+            class="col-span-full flex flex-col items-start gap-14 sm:col-span-4"
+          >
             <div class="overflow-hidden">
               <svg
                 id="down-arrow"
@@ -58,10 +60,9 @@
             </div>
           </div>
 
-          <!-- Profile Image Container - Updated -->
           <div
             id="profile-container"
-            class="relative col-span-full mt-10 h-[30vh] min-h-[220px] max-w-lg w-fit select-none flex-col rounded-lg sm:col-span-4 sm:mt-0 sm:h-full md:flex md:h-[50vh]"
+            class="relative col-span-4 mt-10 h-[20vh] max-w-lg w-fit select-none flex-col rounded-lg sm:mt-0 sm:h-full md:flex md:h-[50vh]"
           >
             <div class="overlay absolute inset-0 z-[2] bg-flax-smoke-50"></div>
             <img
@@ -72,21 +73,21 @@
             />
           </div>
 
-          <!-- Available Section - Updated -->
+          <!-- content-end justify-self-end  -->
           <div
-            class="relative col-span-full mt-4 size-full overflow-clip text-end sm:col-span-8 sm:mt-0"
+            class="relative col-span-8 size-full overflow-clip text-end sm:col-span-4"
           >
             <div
               id="available-for-work"
-              class="flex translate-y-0 flex-col items-end sm:absolute sm:bottom-0 sm:right-0 sm:translate-y-full"
+              class="absolute bottom-0 right-0 flex translate-y-full flex-col items-end"
             >
               <p
-                class="block text-sm font-medium uppercase leading-snug -tracking-tight sm:text-base 3xl:text-base"
+                class="block font-medium uppercase leading-snug -tracking-tight 3xl:text-base"
               >
                 Open for work
               </p>
               <h1
-                class="heading-1-alt font-fancy text-3xl font-bold leading-none -tracking-tight sm:text-4xl 3xl:text-6xl"
+                class="3xl:heading-1 heading-1-alt font-fancy block font-bold leading-none -tracking-tight"
               >
                 {{ AvailableForWorkDate }}
               </h1>
