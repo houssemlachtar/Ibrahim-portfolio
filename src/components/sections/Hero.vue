@@ -149,10 +149,10 @@ onMounted(() => {
   console.log('Is iPhone:', isIphone.value);  // Debug the detection
 });
 
-// Function to detect iPhone
+// Function to detect iPhone (Fixed)
 function detectIphone() {
-  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-  isIphone.value = /iPhone|iPad|iPod/i.test(userAgent) && !window.MSStream;
+  const userAgent = navigator.userAgent || navigator.vendor;
+  isIphone.value = /iPhone|iPad|iPod/.test(userAgent);
 }
 </script>
 
