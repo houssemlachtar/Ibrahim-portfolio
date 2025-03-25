@@ -110,10 +110,6 @@
             </div>
           </div>
 
-          <!-- Add a fallback for the non-iPhone layout (temporary) -->
-          <div v-else>
-            <p>This is the non-iPhone layout.</p>
-          </div>
         </div>
       </div>
     </div>
