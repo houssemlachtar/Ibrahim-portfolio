@@ -89,10 +89,10 @@
 
 <!-- iPhone Layout (visible only on small screens) -->
 <div class="block sm:hidden">
-  <div
-    id="profile-container-mobile"
-    class="relative col-span-4 mt-10 min-h-[250px] max-w-lg w-full select-none flex flex-col rounded-lg sm:mt-0 sm:h-full md:min-h-[300px]"
-  >
+<div
+  id="profile-container-mobile"
+  class="relative col-span-4 mt-10 min-h-[250px] max-w-lg w-[600%] select-none flex flex-col rounded-lg sm:mt-0 sm:h-full md:min-h-[300px]"
+>
     <div class="overlay absolute inset-0 z-[1] bg-flax-smoke-50"></div>
     <img
       id="profile-img-mobile"
@@ -103,7 +103,7 @@
   </div>
 
   <div class="relative col-span-8 w-full text-end sm:col-span-4">
-    <div class="absolute bottom-0 right-0 flex translate-y-0 flex-col items-end">
+    <div class="absolute bottom-0 left-[14rem] w-[500%] flex translate-y-0 flex-col items-end">
       <p class="block font-medium uppercase leading-snug -tracking-tight 3xl:text-base">
         Open for work
       </p>
