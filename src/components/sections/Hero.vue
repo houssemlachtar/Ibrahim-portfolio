@@ -109,7 +109,8 @@
               </h1>
             </div>
           </div>
-
+          <div v-else>
+          </div>
         </div>
       </div>
     </div>
