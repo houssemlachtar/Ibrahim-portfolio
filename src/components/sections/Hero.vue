@@ -85,11 +85,7 @@
           </div>
 
           <!-- iPhone Layout -->
-
-
-          <!-- Add a fallback for the non-iPhone layout (temporary) -->
-          <div v-else>
-                      <div
+          <div
             v-if="isIphone"
             id="profile-container"
             class="relative col-span-4 mt-10 min-h-[250px] max-w-lg w-full select-none flex flex-col rounded-lg sm:mt-0 sm:h-full md:min-h-[300px]"
@@ -112,7 +108,6 @@
                 {{ AvailableForWorkDate }}
               </h1>
             </div>
-          </div>
           </div>
         </div>
       </div>
