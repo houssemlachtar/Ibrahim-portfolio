@@ -59,30 +59,7 @@
           </div>
 
           <!-- Regular Layout (Non-iPhone) -->
-          <div
-            v-if="!isIphone"
-            id="profile-container"
-            class="relative col-span-4 mt-10 h-[20vh] max-w-lg w-fit select-none flex-col rounded-lg sm:mt-0 sm:h-full md:flex md:h-[50vh]"
-          >
-            <div class="overlay absolute inset-0 z-[2] bg-flax-smoke-50"></div>
-            <img
-              id="profile-img"
-              :src="profile"
-              alt="Ebraheem profile"
-              class="h-full scale-100 rounded-lg object-cover object-top brightness-110 grayscale"
-            />
-          </div>
-
-          <div v-if="!isIphone" class="relative col-span-8 size-full overflow-clip text-end sm:col-span-4">
-            <div id="available-for-work" class="absolute bottom-0 right-0 flex translate-y-full flex-col items-end">
-              <p class="block font-medium uppercase leading-snug -tracking-tight 3xl:text-base">
-                Open for work
-              </p>
-              <h1 class="3xl:heading-1 heading-1-alt font-fancy block font-bold leading-none -tracking-tight">
-                {{ AvailableForWorkDate }}
-              </h1>
-            </div>
-          </div>
+          
 
           <!-- iPhone Layout -->
           <div
@@ -110,6 +87,30 @@
             </div>
           </div>
           <div v-else>
+            <div
+            v-if="!isIphone"
+            id="profile-container"
+            class="relative col-span-4 mt-10 h-[20vh] max-w-lg w-fit select-none flex-col rounded-lg sm:mt-0 sm:h-full md:flex md:h-[50vh]"
+          >
+            <div class="overlay absolute inset-0 z-[2] bg-flax-smoke-50"></div>
+            <img
+              id="profile-img"
+              :src="profile"
+              alt="Ebraheem profile"
+              class="h-full scale-100 rounded-lg object-cover object-top brightness-110 grayscale"
+            />
+          </div>
+
+          <div v-if="!isIphone" class="relative col-span-8 size-full overflow-clip text-end sm:col-span-4">
+            <div id="available-for-work" class="absolute bottom-0 right-0 flex translate-y-full flex-col items-end">
+              <p class="block font-medium uppercase leading-snug -tracking-tight 3xl:text-base">
+                Open for work
+              </p>
+              <h1 class="3xl:heading-1 heading-1-alt font-fancy block font-bold leading-none -tracking-tight">
+                {{ AvailableForWorkDate }}
+              </h1>
+            </div>
+          </div>
           </div>
         </div>
       </div>
