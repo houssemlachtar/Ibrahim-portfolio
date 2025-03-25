@@ -12,7 +12,7 @@
           </div>
         </div>
 
-        <div class="lg:column-gap spacing-t grid w-full grid-cols-12">
+        <div class="lg:column-gap spacing-t grid w-full grid-cols-12 justify-items-center">
           <div
             class="col-span-full flex flex-col items-start gap-14 sm:col-span-4"
           >
@@ -62,14 +62,14 @@
 
           <div
             id="profile-container"
-            class="relative col-span-4 mt-10 h-[20vh] max-w-lg select-none flex-col rounded-lg sm:mt-0 sm:h-full md:flex md:h-[50vh]"
+            class="relative col-span-4 mt-10 h-[20vh] max-w-lg w-fit select-none flex-col rounded-lg sm:mt-0 sm:h-full md:flex md:h-[50vh]"
           >
             <div class="overlay absolute inset-0 z-[2] bg-flax-smoke-50"></div>
             <img
               id="profile-img"
               :src="profile"
               alt="Ebraheem profile"
-              class="size-full scale-90 rounded-lg object-cover object-top brightness-110 grayscale"
+              class="h-full scale-100 rounded-lg object-cover object-top brightness-110 grayscale"
             />
           </div>
 
@@ -84,7 +84,7 @@
               <p
                 class="block font-medium uppercase leading-snug -tracking-tight 3xl:text-base"
               >
-                Available for freelance work
+                Open for work
               </p>
               <h1
                 class="3xl:heading-1 heading-1-alt font-fancy block font-bold leading-none -tracking-tight"
