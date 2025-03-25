@@ -59,9 +59,7 @@
           </div>
 
           <!-- Regular Layout (Non-iPhone) -->
-
-          <div v-else>
-                      <div
+          <div
             v-if="!isIphone"
             id="profile-container"
             class="relative col-span-4 mt-10 h-[20vh] max-w-lg w-fit select-none flex-col rounded-lg sm:mt-0 sm:h-full md:flex md:h-[50vh]"
@@ -87,7 +85,11 @@
           </div>
 
           <!-- iPhone Layout -->
-          <div
+
+
+          <!-- Add a fallback for the non-iPhone layout (temporary) -->
+          <div v-else>
+                      <div
             v-if="isIphone"
             id="profile-container"
             class="relative col-span-4 mt-10 min-h-[250px] max-w-lg w-full select-none flex flex-col rounded-lg sm:mt-0 sm:h-full md:min-h-[300px]"
