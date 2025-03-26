@@ -4,7 +4,7 @@
       id="hero"
       class="sticky top-0 flex h-screen w-full items-end pb-[clamp(2.25rem,2.1786rem_+_0.3571vi,2.5rem)]"
     >
-      <div class="relative flex w-full flex-col items-center">
+      <div class="relative flex w-full flex-col items-center iphone-fix">
         <div class="w-full items-end overflow-visible">
           <div class="flex w-full items-start gap-10">
             <MyName />
@@ -116,3 +116,10 @@ onMounted(() => {
   }, 300);
 });
 </script>
+<style>
+@supports (-webkit-touch-callout: none) {
+  .iphone-fix {
+    top: -4rem;
+  }
+}
+</style>
