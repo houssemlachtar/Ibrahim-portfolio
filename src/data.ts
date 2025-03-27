@@ -56,24 +56,20 @@ const socialLinks = [
 
 const resourceLinks = [
   {
-    label: 'Huy Nguyen (the ui designer)',
-    url: 'https://www.huyng.xyz',
-  },
-  {
     label: 'Pillarstack',
     url: 'https://www.pillarstack.com',
   },
   {
     label: 'Figma Template',
-    url: 'https://www.figma.com/community/file/1328038510191576951/project-starter-template',
+    url: 'https://www.figma.com/community',
   },
 ];
 
 const heroText =
-  'A freelance full-stack developer, making good shit since 2023, hiding bad shit since 2023.';
+  'A freelance backend developer, making good shit since 2023, hiding bad shit since 2023.';
 
-const locationPlace = `15°22'22.0"N 44°10'39.5"E`;
-const locationCountry = 'Yemen, Sanaa';
+const locationPlace = `37°46'39.0"N 122°25'09.0"W`;
+const locationCountry = 'San Fancisco, California, USA';
 
 // cal.com
 const dataCalNamespace = '30min';

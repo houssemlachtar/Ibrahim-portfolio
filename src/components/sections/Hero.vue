@@ -109,7 +109,7 @@
   import { dataCalConfig, dataCalLink, dataCalNamespace } from '@/data';
 
   const whoAmI = ref(
-    'A freelance full-stack developer, cutting-edge technologies to deliver comprehensive solutions for your business.',
+    'A freelance backend developer, leveraging cutting-edge technologies to build robust and scalable solutions for your business.',
   );
   const AvailableForWorkDate = ref('');
 

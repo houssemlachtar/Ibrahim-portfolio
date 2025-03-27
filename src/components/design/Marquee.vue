@@ -11,7 +11,7 @@
         :key="`marquee1-${i}`"
         class="flex items-center whitespace-nowrap text-nowrap font-bold"
       >
-        Full Stack Developer
+        Backend Developer
         <div class="w-fit sm:mx-10 sm:scale-75">
           <svg
             style="width: var(--heading-display)"
@@ -35,7 +35,7 @@
         class="flex items-center whitespace-nowrap text-nowrap font-bold"
       >
         <!-- class="font-sans text-transparent [-webkit-text-stroke:1.5px_white]" -->
-        Full Stack Developer
+        Backend Developer
         <div class="w-fit fill-current sm:mx-10 sm:scale-75">
           <svg
             style="width: var(--heading-display)"
@@ -58,7 +58,7 @@
         :key="`marquee3-${i}`"
         class="flex items-center whitespace-nowrap text-nowrap font-bold"
       >
-        Full Stack Developer
+        Backend Developer
         <div class="w-fit fill-current sm:mx-10 sm:scale-75">
           <svg
             style="width: var(--heading-display)"

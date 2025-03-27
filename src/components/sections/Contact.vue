@@ -61,7 +61,7 @@
               Working Globally
             </p>
             <p class="flex size-full items-center justify-start pl-1 pr-2">
-              Available Sep '24
+              Available
             </p>
           </div>
         </div>
