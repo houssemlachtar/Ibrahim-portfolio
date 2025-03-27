@@ -69,7 +69,7 @@
       <div
         class="col-span-5 place-content-center max-sm:place-content-end md:col-span-3"
       >
-        <p class="heading-6 font-bold uppercase">Houssem's Local time</p>
+        <p class="heading-6 font-bold uppercase">Hetari's Local time</p>
         <p class="heading-6">{{ myLocalTime }}</p>
         <p class="heading-6 font-bold uppercase">Your Local time</p>
         <p class="heading-6">{{ userLocalTime }}</p>
@@ -128,12 +128,13 @@
   const userLocalTime = ref('');
 
   onMounted(() => {
-    // Tunisia Time (local to you)
-    myLocalTime.value = moment.tz('Africa/Tunis').format('h:mm:ss a');
+  // San Francisco Time (Pacific Time Zone)
+  myLocalTime.value = moment.tz('America/Los_Angeles').format('h:mm:ss a');
 
-    setInterval(() => {
-      myLocalTime.value = moment.tz('Africa/Tunis').format('h:mm:ss a');
-    }, 1000);
+  setInterval(() => {
+    myLocalTime.value = moment.tz('America/Los_Angeles').format('h:mm:ss a');
+  }, 1000);
+});
 
 
     // User's local time (based on their location)
